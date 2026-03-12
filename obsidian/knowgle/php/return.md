@@ -1,10 +1,7 @@
-Возвращает значение из функции
 
-**Пример**
 ```php
-return $thirdAngle;
+return $volume;
 ```
 
-Использовал в [[obsidian-git/obsidian/Даниил/codewars/PHP_третий_угол_треугольника]]
-
 #php
+>>>>>>> 491434c (Добавил задачи за 12.03 и функции в knowgle)
