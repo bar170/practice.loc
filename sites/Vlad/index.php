@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>ыпвпа</title>
+    <title>V-pdnk</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 <div class="container">
-    <h1>Сайтик пам парам</h1>
+    <h1>V-pdnk site</h1>
 
     <?php
     use common\Tools;
@@ -16,7 +16,7 @@
     $tools = new Tools();
 
     echo "<div class='result'>";
-    echo $tools->getHello('Неизвестный');
+    echo $tools->getHello('Vlad');
     echo "</div>";
     ?>
 
