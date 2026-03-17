@@ -4,7 +4,7 @@ namespace common;
 class Tools {
 
     public function getHello(string $name): string {
-        return "Hello, {$name}!<br>";
+        return "Hello, {$name}!";
     }
 
     public function vladsGetDayOfWeek(array $day): string {
@@ -32,6 +32,7 @@ class Tools {
                 $out = 'Отдыхаем! Сегодня суббота!';
                 break;
         }
+        $out = '<br>' . $out;
         return $out;
     }
 }
