@@ -17,6 +17,7 @@
 
     echo "<div class='result'>";
     echo $tools->getHello('Vlad');
+    echo $tools->vladsGetDayOfWeek(getdate());
     echo "</div>";
     ?>
 
