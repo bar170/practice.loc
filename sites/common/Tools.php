@@ -7,7 +7,7 @@ class Tools {
         return "Hello, {$name}!";
     }
 
-    public function vladsGetDayOfWeek(array $day): string {
+    public function getDayOfWeek(array $day): string {
         $out = 'Ошибка: функция не получила функцию getdate()';
         switch ($day['weekday']) {
             case 'Sunday':
