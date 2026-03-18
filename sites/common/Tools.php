@@ -35,4 +35,8 @@ class Tools {
         $out = '<br>' . $out;
         return $out;
     }
+    public function getCurrentTime(): string
+    {
+        return "Текущее время: " . date('H:i:s');
+    }
 }
