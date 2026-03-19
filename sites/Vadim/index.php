@@ -1,5 +1,5 @@
 <?php
-require_once '.././../tools/Tools.php';
+require_once '../../common/Tools.php';
 
 $tools = new Tools();
 $day = getdate();
