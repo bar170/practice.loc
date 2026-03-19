@@ -1,8 +1,9 @@
 <?php
-require_once '../../tools/Tools.php';
+require_once '../../common/Tools.php';
 
 $tools = new Tools();
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,5 +13,7 @@ $tools = new Tools();
 <body>
     <h1>Добро пожаловать, Вадим!</h1>
     <p><?= $tools->getHello() ?></p>
+    <p><?= $tools->getCurrentTime() ?></p>
+    <p><?= $tools->getDayOfWeek(getdate()) ?></p>
 </body>
 </html>
