@@ -1,5 +1,5 @@
 <?php
-require_once '../../common/Tools.php';
+require_once '/home/wenonezh/sites/practice1oc/www/sites/common/Tools.php';
 
 $tools = new Tools();
 ?>
