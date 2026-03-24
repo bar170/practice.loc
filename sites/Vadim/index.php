@@ -1,24 +1,25 @@
-<?php
-require_once '/home/wenonezh/sites/practice1oc/www/sites/common/Tools.php';
-
-$tools = new Tools();
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Сайт Вадима</title>
-<!--    Где верстка?
-надо было восстановить состояние. Если по гиту сложно отследить, то просто на примере
-Даниила или Влада <- Папки рядом с твоей
--->
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+<div class="container">
     <h1>Добро пожаловать, Вадим!</h1>
-    <p><?= $tools->getHello('Где тут твое имя?') ?></p>
-    <p><?= $tools->getCurrentTime() ?></p>
-    <p><?= $tools->getDayOfWeek(getdate()) ?></p> <!-- Ошибку же выдает, потому что функции не существует.
-   Потому что не правильный же require_once '../../common/Tools.php' не на тот Tools указывает-->
+    <?php
+    use common\Tools;
+    include_once '../common/bootstrap.php';
+
+    $tools = new Tools();
+
+    echo "<div class='result'>";
+    echo $tools->getHello('Вадим');
+    echo $tools->getCurrentTime();
+    echo $tools->getDayOfWeek(getdate());
+    echo "</div>";
+    ?>
+</div>
 </body>
 </html>
